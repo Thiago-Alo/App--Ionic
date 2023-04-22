@@ -21,7 +21,7 @@
         "
         tab="tab1"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Home</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Patudos</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -32,7 +32,7 @@
         "
         tab="tab2"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Dados</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon>Adotar</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -83,11 +83,11 @@
   </div>
 </ion-header>
 <ion-content>
-  <ion-item style="margin-top: 2rem">
+  <ion-item style="width:50%;margin:2rem auto;">
     <ion-label position="floating">Nome de usuario</ion-label>
     <ion-input type="text" name="username" [(ngModel)]="username"></ion-input>
   </ion-item>
-  <ion-item>
+  <ion-item style="width:50%;margin:2rem auto;">
     <ion-label position="floating">Senha</ion-label>
     <ion-input
       [(ngModel)]="password"
@@ -95,5 +95,5 @@
       type="password"
     ></ion-input>
   </ion-item>
-  <ion-button expand="block" (click)="login()">Login</ion-button>
+  <ion-button style="width:30%;margin:2rem auto;" expand="block" (click)="login()">Login</ion-button>
 </ion-content>

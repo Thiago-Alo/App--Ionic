@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <h4 style="text-align: center; margin-left: -40px">Dados</h4>
+    <h4 style="text-align: center; margin-left: -40px">Quer adotar um patudo?</h4>
   </ion-toolbar>
   <ion-menu style="height: 100vh !important" contentId="main-content">
     <ion-header>
@@ -21,7 +21,7 @@
         "
         tab="tab1"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Home</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Patudos</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -32,7 +32,7 @@
         "
         tab="tab2"
       >
-        <h4><ion-icon aria-hidden="true" name="home"></ion-icon> Dados</h4>
+        <h4><ion-icon aria-hidden="true" name="home"></ion-icon>Adotar</h4>
       </ion-tab-button>
       <ion-tab-button
         style="
@@ -84,16 +84,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <h3 style="text-align: center; margin-top: 2rem">Seus dados</h3>
+  <h3 style="text-align: center; margin-top: 2rem">Cadastro</h3>
 
-  <ion-item style="text-align: center">
+  <ion-item style="text-align: center;width:50%;margin:0 auto;">
     <ion-label>
       <p>Seu email</p>
       <h2>{{email}}</h2>
     </ion-label>
   </ion-item>
 
-  <ion-item style="text-align: center">
+  <ion-item style="text-align: center;width:50%;margin:0 auto;">
     <ion-label>
       <p>Seu telefone</p>
       <h2>{{telefone}}</h2>
@@ -102,8 +102,8 @@
 </ion-content>
 
 <ion-content>
-  <ion-button expand="block" (click)="mostrarAlerta()"
-    >Informe seus dados</ion-button
+  <ion-button expand="block" (click)="mostrarAlerta()" style="text-align: center;width:25%;margin:0 auto;"
+    >Se Cadastre</ion-button
   >
-  <ion-alert trigger="present-alert" header="Preencha seus dados"></ion-alert>
+  <ion-alert trigger="present-alert" header="Inform seus dados"></ion-alert>
 </ion-content>
